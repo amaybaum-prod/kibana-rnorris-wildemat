@@ -2191,29 +2191,29 @@
   dependencies:
     tslib "^2.0.0"
 
-"@elastic/apm-rum-core@^5.22.1":
-  version "5.22.1"
-  resolved "https://registry.yarnpkg.com/@elastic/apm-rum-core/-/apm-rum-core-5.22.1.tgz#51f652ace73d4f3ee2d93097a3a3a042764fb26e"
-  integrity sha512-G8NHxG3R+ok3XsRSUKwUcpUQR3/cKMN2UT2LXP57hrtTaI4eKEzk3zn9IXnxAwqwSl0TMtewaIoBTI9KVDCMyQ==
+"@elastic/apm-rum-core@^5.23.0":
+  version "5.23.0"
+  resolved "https://registry.yarnpkg.com/@elastic/apm-rum-core/-/apm-rum-core-5.23.0.tgz#45f463afc14272de83af3a41e369a677b54334b6"
+  integrity sha512-kQnKwf6EaHfNvOrL66SOJuoAp8xuCdqAGb/bnxiKsFu1DKYOglJiW5Su4wSjQp82rTP7Vt2X1RZbu+7lURLX9Q==
   dependencies:
     error-stack-parser "^1.3.5"
     opentracing "^0.14.3"
     promise-polyfill "^8.1.3"
 
-"@elastic/apm-rum-react@^2.0.5":
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/@elastic/apm-rum-react/-/apm-rum-react-2.0.5.tgz#0992d3b869f83bb97a89b22bf03b0342e3be1d54"
-  integrity sha512-yRb4qQSxAO2aQPxqBTob1t1QcoVJ35IP4ixMZkxNKFAL0bvqYRssU+92bOSkj6eyYBOets8NJKzy1Cg3/wOXGw==
+"@elastic/apm-rum-react@^2.0.6":
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@elastic/apm-rum-react/-/apm-rum-react-2.0.6.tgz#9e9d06cbd9c6ad0d9f65a3b6d2bcaccd75211075"
+  integrity sha512-aOk6Dt8fuy7iBlEmzyi7DN0XO+ucr0SjHZdxZmLL/o2O4dOvvBdfuwEBPxFKI6QbNgxb2ZS4QRMGHqGu7bgmhA==
   dependencies:
-    "@elastic/apm-rum" "^5.16.3"
+    "@elastic/apm-rum" "^5.17.0"
     hoist-non-react-statics "^3.3.0"
 
-"@elastic/apm-rum@^5.16.3":
-  version "5.16.3"
-  resolved "https://registry.yarnpkg.com/@elastic/apm-rum/-/apm-rum-5.16.3.tgz#11c31765477ab4174a1fb0949ca4e315f8d070db"
-  integrity sha512-gi4aFrAL46vKXOQM2S/1ZVfpklxJwlzWH2G69qFBw3drpa/lhmpjg6lW8N44v0whz1um1FiSVdl0I+QSgZNYfw==
+"@elastic/apm-rum@^5.17.0":
+  version "5.17.0"
+  resolved "https://registry.yarnpkg.com/@elastic/apm-rum/-/apm-rum-5.17.0.tgz#5f1927f28e1b45cac53c504457e5be76d37f0f79"
+  integrity sha512-e1qz79MQfSBUTlsKcAGbCyn21iARSJA6t300BGATIn+h41EMhFTgKGLT+Nk3kvQ548mx596FrOQsHLg6E/OmeQ==
   dependencies:
-    "@elastic/apm-rum-core" "^5.22.1"
+    "@elastic/apm-rum-core" "^5.23.0"
 
 "@elastic/app-search-javascript@^8.1.2":
   version "8.1.2"
@@ -17713,7 +17713,7 @@ ejs@^3.1.10:
   dependencies:
     jake "^10.8.5"
 
-elastic-apm-node@^4.10.0, elastic-apm-node@^4.11.0:
+elastic-apm-node@^4.10.0:
   version "4.11.0"
   resolved "https://registry.yarnpkg.com/elastic-apm-node/-/elastic-apm-node-4.11.0.tgz#55ba8a08a653b17ce8120f6a4e690d191d0450aa"
   integrity sha512-QXYjOysgjjASJewDK40iUq8W4fdn/QsJtvl4wsxbSncRfcJCSYPaqfWbxN6YAMpOU0vLp5kBj6tdWPBMTaYrMg==
@@ -17749,6 +17749,49 @@ elastic-apm-node@^4.10.0, elastic-apm-node@^4.11.0:
     readable-stream "^3.6.2"
     relative-microtime "^2.0.0"
     require-in-the-middle "^7.1.1"
+    semver "^7.5.4"
+    shallow-clone-shim "^2.0.0"
+    source-map "^0.8.0-beta.0"
+    sql-summary "^1.0.1"
+    stream-chopper "^3.0.1"
+    unicode-byte-truncate "^1.0.0"
+
+elastic-apm-node@^4.15.0:
+  version "4.15.0"
+  resolved "https://registry.yarnpkg.com/elastic-apm-node/-/elastic-apm-node-4.15.0.tgz#d98e9da2155eea019c2bf0a62e6129981604e79d"
+  integrity sha512-8N176AlRizpX+JcNP3xPPbl9HjiDG6PRTIY0XfY2SSmI7dAvxlYk/TFBcOXeGpoMTYCHZHNPUUL0ryvaMV7EGA==
+  dependencies:
+    "@elastic/ecs-pino-format" "^1.5.0"
+    "@opentelemetry/api" "^1.4.1"
+    "@opentelemetry/core" "^1.11.0"
+    "@opentelemetry/sdk-metrics" "^1.12.0"
+    after-all-results "^2.0.0"
+    agentkeepalive "^4.2.1"
+    async-value-promise "^1.1.1"
+    basic-auth "^2.0.1"
+    breadth-filter "^2.0.0"
+    cookie "^0.7.1"
+    core-util-is "^1.0.2"
+    end-of-stream "^1.4.4"
+    error-callsites "^2.0.4"
+    error-stack-parser "^2.0.6"
+    escape-string-regexp "^4.0.0"
+    fast-safe-stringify "^2.0.7"
+    fast-stream-to-buffer "^1.0.0"
+    http-headers "^3.0.2"
+    import-in-the-middle "1.14.4"
+    json-bigint "^1.0.0"
+    lru-cache "10.2.0"
+    measured-reporting "^1.51.1"
+    module-details-from-path "^1.0.3"
+    monitor-event-loop-delay "^1.0.0"
+    object-filter-sequence "^1.0.0"
+    object-identity-map "^1.0.2"
+    original-url "^1.2.3"
+    pino "^8.15.0"
+    readable-stream "^3.6.2"
+    relative-microtime "^2.0.0"
+    require-in-the-middle "^8.0.0"
     semver "^7.5.4"
     shallow-clone-shim "^2.0.0"
     source-map "^0.8.0-beta.0"
@@ -21065,6 +21108,16 @@ import-in-the-middle@1.12.0:
   integrity sha512-yAgSE7GmtRcu4ZUSFX/4v69UGXwugFFSdIQJ14LHPOPPQrWv8Y7O9PHsw8Ovk7bKCLe4sjXMbZFqGFcLHpZ89w==
   dependencies:
     acorn "^8.8.2"
+    acorn-import-attributes "^1.9.5"
+    cjs-module-lexer "^1.2.2"
+    module-details-from-path "^1.0.3"
+
+import-in-the-middle@1.14.4:
+  version "1.14.4"
+  resolved "https://registry.yarnpkg.com/import-in-the-middle/-/import-in-the-middle-1.14.4.tgz#5350cf8eba46e3b51cd3e507f5fe36a8faeb3684"
+  integrity sha512-eWjxh735SJLFJJDs5X82JQ2405OdJeAHDBnaoFCfdr5GVc7AWc9xU7KbrF+3Xd5F2ccP1aQFKtY+65X6EfKZ7A==
+  dependencies:
+    acorn "^8.14.0"
     acorn-import-attributes "^1.9.5"
     cjs-module-lexer "^1.2.2"
     module-details-from-path "^1.0.3"
@@ -28641,6 +28694,14 @@ require-in-the-middle@^7.1.1, require-in-the-middle@^7.4.0:
     debug "^4.3.5"
     module-details-from-path "^1.0.3"
     resolve "^1.22.8"
+
+require-in-the-middle@^8.0.0:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/require-in-the-middle/-/require-in-the-middle-8.0.1.tgz#dbde2587f669398626d56b20c868ab87bf01cce4"
+  integrity sha512-QT7FVMXfWOYFbeRBF6nu+I6tr2Tf3u0q8RIEjNob/heKY/nh7drD/k7eeMFmSQgnTtCzLDcCu/XEnpW2wk4xCQ==
+  dependencies:
+    debug "^4.3.5"
+    module-details-from-path "^1.0.3"
 
 require-main-filename@^2.0.0:
   version "2.0.0"
